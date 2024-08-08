@@ -1,0 +1,324 @@
+﻿replication,standard_ID,element,concentration,error
+standard,Aragonite ST SEV 565-85,Mg,664,
+standard,Aragonite ST SEV 565-85,U,,
+standard,Aragonite ST SEV 565-85,Pb,,
+standard,Aragonite ST SEV 565-85,Ba,,
+standard,Aragonite ST SEV 565-85,Zr,,
+standard,Aragonite ST SEV 565-85,Sr,0.28,
+standard,Aragonite ST SEV 565-85,Zn,20.6,
+standard,Aragonite ST SEV 565-85,Cu,,
+standard,Aragonite ST SEV 565-85,Fe,909,
+standard,Aragonite ST SEV 565-85,Mn,,
+standard,Aragonite ST SEV 565-85,Cr,,
+standard,Aragonite ST SEV 565-85,V,,
+standard,Aragonite ST SEV 565-85,Ti,,
+standard,Aragonite ST SEV 565-85,Ca,392370,
+standard,Aragonite ST SEV 565-85,K,307,
+standard,Aragonite ST SEV 565-85,S,19,
+standard,Aragonite ST SEV 565-85,P,13,
+standard,Aragonite ST SEV 565-85,Si,2992,
+standard,Aragonite ST SEV 565-85,Al,,
+standard,Carbonatite,Mg,11881,
+standard,Carbonatite,U,,
+standard,Carbonatite,Pb,20,
+standard,Carbonatite,Ba,310,
+standard,Carbonatite,Zr,87,
+standard,Carbonatite,Sr,1600,
+standard,Carbonatite,Zn,25,
+standard,Carbonatite,Cu,10,
+standard,Carbonatite,Fe,22342.6,
+standard,Carbonatite,Mn,1394,
+standard,Carbonatite,Cr,35,
+standard,Carbonatite,V,27,
+standard,Carbonatite,Ti,300,
+standard,Carbonatite,Ca,355706,
+standard,Carbonatite,K,249,
+standard,Carbonatite,S,500,
+standard,Carbonatite,P,8946,
+standard,Carbonatite,Si,14399,
+standard,Carbonatite,Al,4100,
+standard,IAEA-158A,Mg,10860,580
+standard,IAEA-158A,U,194,27
+standard,IAEA-158A,Pb,41,5.2
+standard,IAEA-158A,Ba,1031,83
+standard,IAEA-158A,Zr,,
+standard,IAEA-158A,Sr,478,54
+standard,IAEA-158A,Zn,141,18
+standard,IAEA-158A,Cu,,
+standard,IAEA-158A,Fe,26600.000,1200
+standard,IAEA-158A,Mn,367,19
+standard,IAEA-158A,Cr,77,8.2
+standard,IAEA-158A,V,74.1,5.2
+standard,IAEA-158A,Ti,,
+standard,IAEA-158A,Ca,65300,2800
+standard,IAEA-158A,K,20500,1500
+standard,IAEA-158A,S,,
+standard,IAEA-158A,P,,
+standard,IAEA-158A,Si,,
+standard,IAEA-158A,Al,,
+standard,IAEA-456,Mg,,
+standard,IAEA-456,U,,
+standard,IAEA-456,Pb,33.4,2.1
+standard,IAEA-456,Ba,,
+standard,IAEA-456,Zr,,
+standard,IAEA-456,Sr,,
+standard,IAEA-456,Zn,203,9
+standard,IAEA-456,Cu,44.6,2.4
+standard,IAEA-456,Fe,49.5,2.4
+standard,IAEA-456,Mn,825,52
+standard,IAEA-456,Cr,589,42
+standard,IAEA-456,V,223,16
+standard,IAEA-456,Ti,,
+standard,IAEA-456,Ca,,
+standard,IAEA-456,K,,
+standard,IAEA-456,S,,
+standard,IAEA-456,P,,
+standard,IAEA-456,Si,,
+standard,IAEA-456,Al,,
+standard,IAEA-457,Mg,,
+standard,IAEA-457,U,,
+standard,IAEA-457,Pb,105,7
+standard,IAEA-457,Ba,,
+standard,IAEA-457,Zr,,
+standard,IAEA-457,Sr,137,10
+standard,IAEA-457,Zn,425,25.8
+standard,IAEA-457,Cu,365,19
+standard,IAEA-457,Fe,41450,2240
+standard,IAEA-457,Mn,427,30
+standard,IAEA-457,Cr,144,8
+standard,IAEA-457,V,87.4,8.1
+standard,IAEA-457,Ti,,
+standard,IAEA-457,Ca,,
+standard,IAEA-457,K,,
+standard,IAEA-457,S,,
+standard,IAEA-457,P,,
+standard,IAEA-457,Si,,
+standard,IAEA-457,Al,,
+standard,IAEA-458,Mg,,
+standard,IAEA-458,U,,
+standard,IAEA-458,Pb,35.5,0.2
+standard,IAEA-458,Ba,,
+standard,IAEA-458,Zr,,
+standard,IAEA-458,Sr,124,6
+standard,IAEA-458,Zn,154,7
+standard,IAEA-458,Cu,48.1,3.1
+standard,IAEA-458,Fe,40700,2000
+standard,IAEA-458,Mn,886,38
+standard,IAEA-458,Cr,91.5,8.6
+standard,IAEA-458,V,99.8,9.6
+standard,IAEA-458,Ti,,
+standard,IAEA-458,Ca,,
+standard,IAEA-458,K,,
+standard,IAEA-458,S,,
+standard,IAEA-458,P,,
+standard,IAEA-458,Si,,
+standard,IAEA-458,Al,,
+standard,IAEA-461,Mg,,
+standard,IAEA-461,U,,
+standard,IAEA-461,Pb,25.8,1.7
+standard,IAEA-461,Ba,,
+standard,IAEA-461,Zr,,
+standard,IAEA-461,Sr,,
+standard,IAEA-461,Zn,156,11
+standard,IAEA-461,Cu,26.1,2
+standard,IAEA-461,Fe,2600,220
+standard,IAEA-461,Mn,333,20
+standard,IAEA-461,Cr,27,2.4
+standard,IAEA-461,V,6.86,0.67
+standard,IAEA-461,Ti,,
+standard,IAEA-461,Ca,9270,900
+standard,IAEA-461,K,,
+standard,IAEA-461,S,,
+standard,IAEA-461,P,,
+standard,IAEA-461,Si,,
+standard,IAEA-461,Al,,
+standard,IAEA-470,Mg,3080,390
+standard,IAEA-470,U,,
+standard,IAEA-470,Pb,0.361,0.053
+standard,IAEA-470,Ba,,
+standard,IAEA-470,Zr,,
+standard,IAEA-470,Sr,20.6,1.6
+standard,IAEA-470,Zn,727,48
+standard,IAEA-470,Cu,146,13
+standard,IAEA-470,Fe,131,12
+standard,IAEA-470,Mn,67,5
+standard,IAEA-470,Cr,0.97,0.11
+standard,IAEA-470,V,0.9,0.13
+standard,IAEA-470,Ti,,
+standard,IAEA-470,Ca,2430,280
+standard,IAEA-470,K,,
+standard,IAEA-470,S,,
+standard,IAEA-470,P,,
+standard,IAEA-470,Si,,
+standard,IAEA-470,Al,,
+standard,Lujaurite,Mg,1688,
+standard,Lujaurite,U,14,
+standard,Lujaurite,Pb,43,
+standard,Lujaurite,Ba,450,
+standard,Lujaurite,Zr,11000,
+standard,Lujaurite,Sr,4600,
+standard,Lujaurite,Zn,395,
+standard,Lujaurite,Cu,13,
+standard,Lujaurite,Fe,622872,
+standard,Lujaurite,Mn,6000,
+standard,Lujaurite,Cr,10,
+standard,Lujaurite,V,81,
+standard,Lujaurite,Ti,2900,
+standard,Lujaurite,Ca,23013,
+standard,Lujaurite,K,45741,
+standard,Lujaurite,S,650,
+standard,Lujaurite,P,260,
+standard,Lujaurite,Si,244992,
+standard,Lujaurite,Al,72186,
+standard,NCS DC60113 Gypsum,Mg,29677,
+standard,NCS DC60113 Gypsum,U,,
+standard,NCS DC60113 Gypsum,Pb,,
+standard,NCS DC60113 Gypsum,Ba,,
+standard,NCS DC60113 Gypsum,Zr,,
+standard,NCS DC60113 Gypsum,Sr,,
+standard,NCS DC60113 Gypsum,Zn,,
+standard,NCS DC60113 Gypsum,Cu,,
+standard,NCS DC60113 Gypsum,Fe,4406,
+standard,NCS DC60113 Gypsum,Mn,,
+standard,NCS DC60113 Gypsum,Cr,,
+standard,NCS DC60113 Gypsum,V,,
+standard,NCS DC60113 Gypsum,Ti,,
+standard,NCS DC60113 Gypsum,Ca,200116,
+standard,NCS DC60113 Gypsum,K,3155,
+standard,NCS DC60113 Gypsum,S,13030,
+standard,NCS DC60113 Gypsum,P,,
+standard,NCS DC60113 Gypsum,Si,33707,
+standard,NCS DC60113 Gypsum,Al,,
+standard,NCS DC60114 Gypsum,Mg,19242,
+standard,NCS DC60114 Gypsum,U,,
+standard,NCS DC60114 Gypsum,Pb,,
+standard,NCS DC60114 Gypsum,Ba,,
+standard,NCS DC60114 Gypsum,Zr,,
+standard,NCS DC60114 Gypsum,Sr,,
+standard,NCS DC60114 Gypsum,Zn,,
+standard,NCS DC60114 Gypsum,Cu,,
+standard,NCS DC60114 Gypsum,Fe,2658,
+standard,NCS DC60114 Gypsum,Mn,,
+standard,NCS DC60114 Gypsum,Cr,,
+standard,NCS DC60114 Gypsum,V,,
+standard,NCS DC60114 Gypsum,Ti,348,
+standard,NCS DC60114 Gypsum,Ca,216411,
+standard,NCS DC60114 Gypsum,K,1909,
+standard,NCS DC60114 Gypsum,S,15070,
+standard,NCS DC60114 Gypsum,P,,
+standard,NCS DC60114 Gypsum,Si,19448,
+standard,NCS DC60114 Gypsum,Al,,
+standard,NCS DC60116,Mg,398,
+standard,NCS DC60116,U,,
+standard,NCS DC60116,Pb,,
+standard,NCS DC60116,Ba,,
+standard,NCS DC60116,Zr,,
+standard,NCS DC60116,Sr,,
+standard,NCS DC60116,Zn,,
+standard,NCS DC60116,Cu,,
+standard,NCS DC60116,Fe,650,
+standard,NCS DC60116,Mn,12,
+standard,NCS DC60116,Cr,,
+standard,NCS DC60116,V,,
+standard,NCS DC60116,Ti,120,
+standard,NCS DC60116,Ca,550,
+standard,NCS DC60116,K,506,
+standard,NCS DC60116,S,,
+standard,NCS DC60116,P,18,
+standard,NCS DC60116,Si,460534,
+standard,NCS DC60116,Al,,
+standard,NCS DC60117 Siliceous Sand and Ore,Mg,151,
+standard,NCS DC60117 Siliceous Sand and Ore,U,,
+standard,NCS DC60117 Siliceous Sand and Ore,Pb,,
+standard,NCS DC60117 Siliceous Sand and Ore,Ba,,
+standard,NCS DC60117 Siliceous Sand and Ore,Zr,,
+standard,NCS DC60117 Siliceous Sand and Ore,Sr,,
+standard,NCS DC60117 Siliceous Sand and Ore,Zn,,
+standard,NCS DC60117 Siliceous Sand and Ore,Cu,,
+standard,NCS DC60117 Siliceous Sand and Ore,Fe,615,
+standard,NCS DC60117 Siliceous Sand and Ore,Mn,1936,
+standard,NCS DC60117 Siliceous Sand and Ore,Cr,,
+standard,NCS DC60117 Siliceous Sand and Ore,V,,
+standard,NCS DC60117 Siliceous Sand and Ore,Ti,114,
+standard,NCS DC60117 Siliceous Sand and Ore,Ca,672,
+standard,NCS DC60117 Siliceous Sand and Ore,K,10460,
+standard,NCS DC60117 Siliceous Sand and Ore,S,,
+standard,NCS DC60117 Siliceous Sand and Ore,P,41,
+standard,NCS DC60117 Siliceous Sand and Ore,Si,441367,
+standard,NCS DC60117 Siliceous Sand and Ore,Al,,
+standard,NCS DC71306 Rock,Mg,131498,
+standard,NCS DC71306 Rock,U,0.16,
+standard,NCS DC71306 Rock,Pb,4.44,
+standard,NCS DC71306 Rock,Ba,44.3,
+standard,NCS DC71306 Rock,Zr,3,
+standard,NCS DC71306 Rock,Sr,27,
+standard,NCS DC71306 Rock,Zn,11.7,
+standard,NCS DC71306 Rock,Cu,,
+standard,NCS DC71306 Rock,Fe,1329,
+standard,NCS DC71306 Rock,Mn,77,
+standard,NCS DC71306 Rock,Cr,2.6,
+standard,NCS DC71306 Rock,V,21,
+standard,NCS DC71306 Rock,Ti,90,
+standard,NCS DC71306 Rock,Ca,214553,
+standard,NCS DC71306 Rock,K,315,
+standard,NCS DC71306 Rock,S,,
+standard,NCS DC71306 Rock,P,26,
+standard,NCS DC71306 Rock,Si,2899,
+standard,NCS DC71306 Rock,Al,,
+standard,NCS DC73301 Rock,Mg,2533,
+standard,NCS DC73301 Rock,U,18.8,
+standard,NCS DC73301 Rock,Pb,31,
+standard,NCS DC73301 Rock,Ba,343,
+standard,NCS DC73301 Rock,Zr,167,
+standard,NCS DC73301 Rock,Sr,106,
+standard,NCS DC73301 Rock,Zn,28,
+standard,NCS DC73301 Rock,Cu,3.2,
+standard,NCS DC73301 Rock,Fe,7204,
+standard,NCS DC73301 Rock,Mn,463,
+standard,NCS DC73301 Rock,Cr,5,
+standard,NCS DC73301 Rock,V,24,
+standard,NCS DC73301 Rock,Ti,2,
+standard,NCS DC73301 Rock,Ca,11078,
+standard,NCS DC73301 Rock,K,41591,
+standard,NCS DC73301 Rock,S,,
+standard,NCS DC73301 Rock,P,177,
+standard,NCS DC73301 Rock,Si,340480,
+standard,NCS DC73301 Rock,Al,,
+standard,NCS DC73305 Rock,Mg,12124,302
+standard,NCS DC73305 Rock,U,2.1,0.3
+standard,NCS DC73305 Rock,Pb,1.5,0.3
+standard,NCS DC73305 Rock,Ba,450,29
+standard,NCS DC73305 Rock,Zr,214,9
+standard,NCS DC73305 Rock,Sr,90,7
+standard,NCS DC73305 Rock,Zn,20,2
+standard,NCS DC73305 Rock,Cu,42,2
+standard,NCS DC73305 Rock,Fe,9722,420
+standard,NCS DC73305 Rock,Mn,173,11
+standard,NCS DC73305 Rock,Cr,99,6
+standard,NCS DC73305 Rock,V,87,4
+standard,NCS DC73305 Rock,Ti,3950,130
+standard,NCS DC73305 Rock,Ca,4288,286
+standard,NCS DC73305 Rock,K,34534,830
+standard,NCS DC73305 Rock,S,66,
+standard,NCS DC73305 Rock,P,,
+standard,NCS DC73305 Rock,Si,276900,748
+standard,NCS DC73305 Rock,Al,,
+standard,Titano Gypsum TIG-1,Mg,,
+standard,Titano Gypsum TIG-1,U,2.5,
+standard,Titano Gypsum TIG-1,Pb,,
+standard,Titano Gypsum TIG-1,Ba,,
+standard,Titano Gypsum TIG-1,Zr,80,
+standard,Titano Gypsum TIG-1,Sr,,
+standard,Titano Gypsum TIG-1,Zn,32,
+standard,Titano Gypsum TIG-1,Cu,,
+standard,Titano Gypsum TIG-1,Fe,,
+standard,Titano Gypsum TIG-1,Mn,35,
+standard,Titano Gypsum TIG-1,Cr,246,
+standard,Titano Gypsum TIG-1,V,560,
+standard,Titano Gypsum TIG-1,Ti,4916,
+standard,Titano Gypsum TIG-1,Ca,230848,
+standard,Titano Gypsum TIG-1,K,,
+standard,Titano Gypsum TIG-1,S,17370,
+standard,Titano Gypsum TIG-1,P,175,
+standard,Titano Gypsum TIG-1,Si,514,
+standard,Titano Gypsum TIG-1,Al,,
