@@ -1,0 +1,131 @@
+---
+title: "Analiza danych dla standardow XRF"
+format: html
+editor: visual
+---
+
+```{r setup, include=FALSE}
+# Load packages
+library(tidyverse)
+knitr::opts_chunk$set(
+  echo = FALSE, #
+  warning = FALSE,  # Suppress warnings
+  message = FALSE   # Suppress messages
+)
+```
+
+## Zmienność wyników wzdłuż próbki
+
+Jako przykład biorę dwa różne standardy: IAEA-457 i Carbonatite. Tworzę wykres pokazujący, jak zmieniają sie wartości wzdłuż skanowanej próbki dla wszystkich pierwiastków, dla których mamy dane z kart. Wartości dla każdego kroku pomiarowego to średnia z 3 replications. Osobno pokazane są wyniki dla dwóch wielkości okien. Skupiam się tylko na mokrych próbkach, zakładam że przy suchych wynik będzie ten sam.
+
+```{r}
+xrf_long <- read_rds("data/xrf_long.rds")
+
+scan_var_ws_s_1 <- xrf_long %>% 
+  filter(standard_ID == "IAEA-457" & treatment == "wet" & window_settings == "1 x 15 mm") %>%
+  group_by(element, replication) %>% 
+  mutate(step = as.integer(1:10)) %>%
+  ungroup() %>% 
+  group_by(element, step) %>% 
+  summarise(mean_conc_4step = mean(concentration)) %>% 
+  ggplot() +
+  geom_line(aes(y = mean_conc_4step, x = step)) +
+  geom_point(aes(y = mean_conc_4step, x = step)) +
+    facet_wrap(.~element, scales = "free") +
+  ggtitle("IAEA-457, WS: 1 x 15 mm")
+
+scan_var_ws_s_1
+```
+
+```{r}
+scan_var_ws_l_1 <- xrf_long %>% 
+  filter(standard_ID == "IAEA-457" & treatment == "wet" & window_settings == "10 x 15 mm") %>%
+  group_by(element, replication) %>% 
+  mutate(step = as.integer(1:10)) %>% 
+  ungroup() %>% 
+  group_by(element, step) %>% 
+  summarise(mean_conc_4step = mean(concentration)) %>% 
+  ggplot() +
+  geom_line(aes(y = mean_conc_4step, x = step)) +
+  geom_point(aes(y = mean_conc_4step, x = step)) +
+    facet_wrap(.~element, scales = "free") +
+  ggtitle("IAEA-457, WS: 10 x 15 mm")
+
+scan_var_ws_l_1
+```
+
+```{r}
+scan_var_ws_s_2 <- xrf_long %>% 
+  filter(standard_ID == "Carbonatite" & treatment == "wet" & window_settings == "1 x 15 mm") %>%
+  group_by(element, replication) %>% 
+  mutate(step = as.integer(1:10)) %>% 
+  ungroup() %>% 
+  group_by(element, step) %>% 
+  summarise(mean_conc_4step = mean(concentration)) %>% 
+  ggplot() +
+  geom_line(aes(y = mean_conc_4step, x = step)) +
+  geom_point(aes(y = mean_conc_4step, x = step)) +
+    facet_wrap(.~element, scales = "free") +
+  ggtitle("Carbonatite, WS: 1 x 15 mm")
+
+scan_var_ws_s_2
+```
+
+```{r}
+scan_var_ws_l_2 <- xrf_long %>% 
+  filter(standard_ID == "Carbonatite" & treatment == "wet" & window_settings == "10 x 15 mm") %>%
+  group_by(element, replication) %>% 
+  mutate(step = as.integer(1:10)) %>% 
+  ungroup() %>% 
+  group_by(element, step) %>% 
+  summarise(mean_conc_4step = mean(concentration)) %>% 
+  ggplot() +
+  geom_line(aes(y = mean_conc_4step, x = step)) +
+  geom_point(aes(y = mean_conc_4step, x = step)) +
+    facet_wrap(.~element, scales = "free") +
+  ggtitle("Carbonatite, WS: 10 x 15 mm")
+
+scan_var_ws_l_2
+```
+
+Komantarz: dla każdego pierwiastka jest obserwowana zmienność przy kolejnych krokach pomiarowych (tj. wynik nie jest stały wzdłuż próbki). Zmienność ta jest jednak w większości przypadków pozbawiona wyraźnych trendów, co sugeruje, że nie ma większego znaczenia, w którym miejscu próbki był robiony pomiar. Wyjątkiem jest może pierwszy pomiar przy większym oknie pomiarowym, który dla niektórych pierwiastków wykazuje wyraźnie niższe wartości (szczegolnie wyraźne przy standardzie IAEA). Ze względu na to do analiz lepiej brać medianę wyników niż średnią (mediana jest niezależna od ałtlajerów w przeciwieństiwe do średniej).
+
+## Zakres zróżnicowania wyników dla replicates vs. error values
+
+Dla różnych treatment i wielkości okien pomiarowych. Dla error jest wzięta najmniejsza wartość ze wszystkich, więc rozpatrujemy pesymistyczny scenariusz.
+
+```{r}
+error_vs_range_dry_ws_s <- xrf_long %>% 
+  filter(treatment == "dry" & window_settings == "1 x 15 mm") %>% 
+  filter(!is.na(concentration) & !concentration == 0) %>% 
+  group_by(standard_ID, element, replication) %>% 
+  summarise(med_conc = median(concentration),
+            med_error = median(error)) %>% 
+  ungroup() %>% 
+  group_by(standard_ID, element) %>% 
+  summarise(min_error = min(med_error),
+            conc_range = max(med_conc) - min(med_conc),
+            mean_med_conc = mean(med_conc)) %>%
+  pivot_longer(min_error:conc_range,
+               names_to = "var",
+               values_to = "value") %>% 
+  mutate(perc_dev = (value/mean_med_conc)*100)
+
+error_vs_range_dry_ws_s_mod <- error_vs_range_dry_ws_s %>% 
+  mutate(perc_dev = ifelse(perc_dev > 200, 199.9999, perc_dev)) #tutaj jeszcze dodac kolumne, w ktorej beda wartosci te odstajace, z oryginalnej tabeli, pote wykorzystać to do stworzenia wykresu!
+
+error_vs_range_dry_ws_s_plot <- ggplot() +
+  geom_col(data = error_vs_range_dry_ws_s_mod,
+           aes(x = element, y = perc_dev, fill = var),
+           position = position_dodge()) +
+  geom_text(data = filter(error_vs_range_dry_ws_s_mod, 
+                         perc_dev == 199.9999),
+            aes(x = element, y = perc_dev, label = ),
+            position = position_dodge(),
+            vjust = -0.5) + 
+  facet_wrap(.~standard_ID, scales = "fixed")
+
+error_vs_range_dry_ws_s_plot
+
+```
+

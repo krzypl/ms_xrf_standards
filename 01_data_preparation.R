@@ -2,9 +2,7 @@ library(tidyverse)
 
 standard_ID_2_select <- read_rds("data/standrad_ID.rds")
 
-file_names <- list.files(path = "data", full.names = TRUE)
-file_names <- file_names[-which(file_names == "data/standrad_ID.rds")]
-file_names <- file_names[-which(file_names == "data/standards_characteristics.xlsx")]
+file_names <- list.files(path = "data/raw_data", full.names = TRUE)
 
 read_raw_xrf <- function(file) {
   read_csv(file, skip = 5) %>% 
@@ -16,7 +14,7 @@ read_raw_xrf <- function(file) {
 
 xrf_list <- lapply(file_names, read_raw_xrf)
 
-remove_from_names <- c("data/", ".csv", "_he")
+remove_from_names <- c("data/raw_data/", ".csv", "_he")
 clean_names <- file_names
 for (phrase in remove_from_names) {
   clean_names <- gsub(phrase, "", clean_names)
