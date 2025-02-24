@@ -1,1 +1,1 @@
-# ms_xrf_standards
+#This repo is for the preprint "Evaluating accuracy and limitations of Geotek X-ray fluorescence core scanner elemental concentration estimates for sediment samples" by Pleskot et al. It contains all the data and codes necessary to reproduce the results of the study.
