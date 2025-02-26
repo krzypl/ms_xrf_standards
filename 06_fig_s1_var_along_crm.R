@@ -36,13 +36,13 @@ scan_var_ws_l_2 <- xrf_long %>%
   facet_wrap(.~element, scales = "free", ncol = 4) +
   labs(y = "Concentration (ppm)",
        x = "Position (mm)") +
-  ggtitle("(D) Carbonatite, WS: 10 x 15 mm, dry sample, replication 1") +
+  ggtitle("(B) Carbonatite, WS: 10 x 15 mm, dry sample, replication 1") +
   theme(plot.title = element_text(size = 10))
 
 scan_var_plot <- grid.arrange(scan_var_ws_l_1,
                               scan_var_ws_l_2,
                               ncol = 1,
-                              heights = c(1, 2.5))
+                              heights = c(1.5, 2.2))
 
 
 ggsave(filename = "figures/fig_s1_var_along_sample.svg",
